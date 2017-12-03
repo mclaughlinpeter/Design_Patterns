@@ -10,7 +10,7 @@ AddressBook::AddressBook(Formatter * fmtr)
 
 AddressBook::~AddressBook()
 {
-
+    delete _addresses;
 }
 
 void AddressBook::PrintAddresses() const
