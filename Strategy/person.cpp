@@ -1,4 +1,5 @@
 #include "person.hpp"
+#include <iostream>
 
 Person::Person(std::string fn, std::string ln, int ag)
 {
@@ -21,3 +22,8 @@ const int & Person::GetAge() const
 {
     return age;
 }   
+
+std::string Person::ToString() const
+{
+    return lastName + ", " + firstName + "; " + std::to_string(age) + "\n";
+}

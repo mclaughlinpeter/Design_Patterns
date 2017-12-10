@@ -7,6 +7,7 @@ public:
     const std::string & GetFirstName() const;
     const std::string & GetLastName() const;
     const int & GetAge() const;
+    std::string ToString() const;
 private:
     std::string firstName;
     std::string lastName;
