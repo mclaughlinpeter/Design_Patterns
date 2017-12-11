@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 #include <vector>
 
@@ -12,6 +14,7 @@ private:
 public:
     AddressBook(Formatter * fmtr);
     ~AddressBook();
+    void AddAddress(const Person & addr);
     void PrintAddresses() const;
 };
 
